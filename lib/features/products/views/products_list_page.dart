@@ -5,6 +5,7 @@ import 'package:quickshop/core/components/custom_drawer.dart';
 import 'package:quickshop/core/components/custom_header_text.dart';
 import 'package:quickshop/core/constants/app_constatnts.dart';
 import 'package:quickshop/features/products/view_model/products_bloc.dart';
+import 'package:quickshop/features/products/view_model/products_event.dart';
 import 'package:quickshop/features/products/view_model/products_state.dart';
 import 'package:quickshop/features/products/repositories/product_repositories.dart';
 
@@ -69,6 +70,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../models/product_model.dart';
 
 class ProductListView extends StatelessWidget {
+  // @override
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
-class CustomSubmitButton extends StatelessWidget {
+class CustomButton extends StatelessWidget {
   Function function;
-  CustomSubmitButton({super.key, required this.function});
+  String text;
+  CustomButton({super.key, required this.function, required this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +15,7 @@ class CustomSubmitButton extends StatelessWidget {
       decoration: BoxDecoration(color: colorScheme.primary),
       child: TextButton(
           onPressed: () => function(),
-          child: Text("Submit",
+          child: Text(text,
               style:
                   textTheme.bodyMedium?.copyWith(color: colorScheme.surface))),
     );
